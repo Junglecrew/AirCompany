@@ -315,7 +315,7 @@ body
     padding-top: 33px;
     padding-left: 30px;
     transition: 3s;
-    background: url('../img/Rounded_Rectangle.png') no-repeat;
+    background: url('../img/rounded_Rectangle.png') no-repeat;
 }
 
 .header-info-schedule-time__regular {
