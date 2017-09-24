@@ -1,0 +1,4 @@
+
+.icon-feed:before { content: '\e800'; } /* '' */
+.icon-main:before { content: '\e801'; } /* '' */
+.icon-team:before { content: '\e802'; } /* '' */

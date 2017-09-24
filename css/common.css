@@ -1,0 +1,676 @@
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary,
+p
+{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'robotolight';
+    line-height: 1.42;
+}
+
+.visuallyHidden {    
+    position: absolute; 
+    overflow: hidden;   
+    clip: rect(0 0 0 0);    
+    height: 1px;    
+    width: 1px; 
+    margin: -1px;   
+    padding: 0; 
+    border: 0;
+}
+
+
+.horisontal li
+{
+    display: inline-block;
+}
+
+
+
+.wrapper
+{
+    position: relative;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+.breadcrumbs
+{
+    margin-bottom: 25px;
+    padding-left: 2px;
+}
+
+.breadcrumbs__item
+{
+
+    font-family: 'robotolight_italic';
+    font-style: italic;
+    line-height: 18px;
+}
+
+.crew
+{
+    display: -webkit-flex;
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.crew-list {
+    text-align: center;
+    
+}
+
+
+.crew-member {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 258px;
+    margin: 49px 25px 0px 12px;
+    text-align: center;
+}
+
+.crew-member__photo
+{
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 50px 17px;
+    border-radius: 50%;
+}
+
+
+.crew-member__name
+{
+    margin-bottom: 1px;
+    line-height: 21px;
+}
+
+.crew-member__occ {
+    margin-bottom: 5px;
+}
+
+.crew-memer__descr {
+    line-height: 21px;
+
+}
+/*Страница приветствия - интро - начало intro.html*/
+
+.main-intro-bg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../img/main-bg.png) no-repeat;
+    background-size: 100%;
+}
+
+.main-intro-bg-logo
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 206px;
+    height: 270px;
+    margin: -135px 0 0 -103px;
+}
+
+.main-intro-bg-logo img
+{
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    border: none;
+}
+
+.main-button
+{
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 206px;
+    padding: 16px 20px;
+
+    cursor: default;
+    text-align: center;
+
+    color: #1c5bc3;
+    border: 1px solid #1c5bc3;
+    border-radius: 4px;
+}
+.main-button > a
+{
+    text-decoration: none;
+}
+
+.main-button:hover
+{
+    color: #fff;
+    background-color: #1c5bc3;
+}
+
+/* Информация о компании About.html*/
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #1c5bc3;
+}
+
+
+
+.header-logo
+{
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+
+.header-logo img
+{
+    vertical-align: middle;
+}
+
+.header-info
+{
+    position: relative;
+    right: 0;
+
+    margin-right: 20px;
+    margin-left: 20px;
+
+    cursor: default;
+}
+.header-info__phone
+{
+    font-size: 21px;
+    margin-top: 14px;
+    color: #fff;
+    font-family: "robotobold";
+}
+
+.header-info-schedule
+{
+    text-align: right;
+     position: relative;
+}
+
+.header-info-schedule__timetable
+{
+    font-size: 14px;
+    right: 0;
+    text-decoration: underline;
+    color: #ced7ee;
+}
+
+.header-info-schedule__timetable:hover
+{
+    color: #fff;
+}
+
+
+.header-info-schedule__timetable:hover .header-info-schedule-time
+{
+    display: block;
+}
+
+
+.header-info-schedule-time
+{
+    font-size: 14px;
+    position: absolute;
+    margin-right: 37px;
+    text-align: left;
+    z-index: 1;
+    display: none;
+    width: 159px;
+    height: 98px;
+    padding-top: 33px;
+    padding-left: 30px;
+    transition: 3s;
+    background: url('../img/Rounded_Rectangle.png') no-repeat;
+}
+
+.header-info-schedule-time__regular {
+    color: #1c5bc3;
+    font-family: 'robotobold';
+}
+
+.header-info-schedule-time__break
+{
+    color: #000;
+    font-family: 'robotolight';
+}
+
+.sidebar
+{
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 50px;
+    margin-top: 40px;
+    vertical-align: top;
+}
+
+.nav
+{
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'robotobold';  
+}
+
+.nav__item
+{
+    font-size: 12px;
+
+    margin-bottom: 25px;
+    margin-left: 15px;
+
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+
+    color: #1c5bc3;
+}
+
+.sidebar i
+{
+    font-size: 16px;
+
+    margin-right: 19px;
+}
+
+.nav__link
+{
+    text-decoration: none;
+
+    color: #1c5bc3;
+}
+
+.nav__link.active
+{
+    color: #000;
+}
+
+.nav__link:hover
+{
+    color: #000;
+}
+
+
+.main-block
+{
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 900px;
+    margin-left: 19px;
+    padding-bottom: 65px;
+    margin-top: 40px;
+}
+
+.main-block-banner
+{
+    position: relative;
+
+    display: inline-block;
+    width: 880px;
+
+    margin-top: -40px;
+    height: 355px;
+    overflow: hidden;
+}
+
+
+.main-block-banner_image img
+{
+    width: 100%;
+}
+
+.main-block-banner_text
+{
+    position: absolute;
+    top: 45%;
+    left: 67px;
+}
+
+.bg-image
+{
+    width: 100%;
+}
+
+.main-block-main-text {
+    font-size: 18px;
+    width: 700px;
+    line-height: 30px;
+}
+
+.main-block-main-text > p
+{
+    margin: 16px 0;
+}
+
+.main-block-main-text>ul
+{
+
+    padding-left: 40px;
+    margin: -5px auto;
+}
+
+
+.main-block-main-text ul li:last-child
+{
+    margin-bottom: 20px;
+}
+
+.booking_info
+{
+    margin-top: 10px;
+    margin-bottom: 65px;
+    padding: 15px 30px;
+    
+    color: #fff;
+    background-color: #1c5bc3;
+}
+
+.partners {
+    margin:0 -15px -70px -15px ;
+
+}
+
+.partners-title {
+
+    font-family: 'robotobold';
+    line-height: 38px;
+    font-size: 49px;
+    margin-left: 15px;
+}
+.partners-list
+{
+    line-height: 100px;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+.partner-list__item {
+    list-style: none;
+    text-align: center;
+    width: 160px;
+
+    margin: 0 10px 30px 15px;
+    position: relative;
+}
+
+.partner-list__item > div {
+    position: relative;
+}
+
+.partner-list__item  img
+{
+    -webkit-filter: grayscale(1); /* Webkit браузеры */
+            filter: gray; /* для IE6-9 */
+            filter: grayscale(1); /* W3C */
+}
+.partner-list__item img:hover 
+{
+    transition: .5s ease;
+
+    -webkit-filter: none; /* Webkit браузеры */
+            filter: none; /* для IE6-9 */
+            filter: none; /* W3C */
+}
+
+
+/* Общие стили для всех страниц*/
+
+
+.header-container
+{
+    display: -webkit-flex;
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+    margin:0 auto;
+    width: 1100px;
+    min-height: 75px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2.crew-member__name
+{
+    font-family: 'robotobold';
+    font-size: 18px;
+    margin-top: 11px;
+}
+
+.title
+{
+    font-family: 'robotobold';
+    line-height: 38px;
+    font-size: 49px;
+    margin: 0 auto;
+}
+
+.container
+{
+    position: relative;
+
+    display: block;
+
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/*.italic-text
+{
+    font-family: 'MyWebFont-LightItalic_1';
+}*/
+
+.bold-text
+{
+    font-family: 'robotobold';
+
+}
+
+.blue-text
+{
+    color: #1c5bc3;
+}
+
+.underlined-text {
+    text-decoration: underline;
+}
+
+.active
+{
+    color: #000;
+}
+
+
+.footer
+{
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 77px;
+    color: #fff;
+    background-color: #1c5bc3;
+
+    
+        
+}
+
+.footer-container {
+    width: 1100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+        margin: 0 auto;
+}
+
+.author {
+    font-family: 'robotobold';
+}
+
+.company {
+    font-family: 'robotobold';
+}
+
+.footer-item
+{
+    box-sizing: border-box;
+    width: 235px;
+    line-height: 18px;
+}
+.footer-item-about
+{
+    margin: 10px 10px 10px 20px;
+}
+
+.footer-item-logo
+{
+    margin: 20px 10px 0px 0px;
+    text-align: center;
+    overflow: hidden;
+    width: 121px;
+    height: 37px;
+}
+
+.footer-item-social
+{
+    font-size: 14px;
+
+    position: relative;
+
+    margin-top: 15px;
+    margin-right: 18px;
+
+    text-align: right;
+}
+
+.footer-item-social__greeting {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+.social-list
+{
+    margin-right: 17px;
+
+    list-style: none;
+}
+
+.social-list__item
+{
+    width: 20px;
+    height: 20px;
+    background-color: #d2def3;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social-list__item:hover {
+    background-color: #fff;
+}
