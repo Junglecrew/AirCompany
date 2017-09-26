@@ -349,7 +349,7 @@ body
 {
     font-size: 12px;
 
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     margin-left: 15px;
 
     letter-spacing: 2.4px;
@@ -390,7 +390,7 @@ body
     box-sizing: border-box;
     width: 900px;
     margin-left: 19px;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
     margin-top: 40px;
 }
 
@@ -415,7 +415,7 @@ body
 .main-block-banner_text
 {
     position: absolute;
-    top: 45%;
+    top: 44%;
     left: 67px;
 }
 
@@ -432,7 +432,7 @@ body
 
 .main-block-main-text > p
 {
-    margin: 16px 0;
+    margin: 15px 0;
 }
 
 .main-block-main-text>ul
@@ -440,6 +440,10 @@ body
 
     padding-left: 40px;
     margin: -5px auto;
+}
+
+.main-block-main-text>ul>li {
+    margin-bottom: 5px;
 }
 
 
@@ -452,7 +456,7 @@ body
 {
     margin-top: 10px;
     margin-bottom: 65px;
-    padding: 15px 30px;
+    padding: 16px 30px;
     
     color: #fff;
     background-color: #1c5bc3;
@@ -472,10 +476,11 @@ body
 }
 .partners-list
 {
-    line-height: 100px;
+    line-height: 80px;
     display: flex;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 52px;
+    margin-bottom: 8px;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
@@ -487,7 +492,7 @@ body
     text-align: center;
     width: 160px;
 
-    margin: 0 10px 30px 15px;
+    margin: 0 15px 30px 16px;
     position: relative;
 }
 
@@ -640,7 +645,7 @@ h2.crew-member__name
 
     position: relative;
 
-    margin-top: 15px;
+    margin-top: 17px;
     margin-right: 18px;
 
     text-align: right;
@@ -655,7 +660,7 @@ h2.crew-member__name
 
 .social-list
 {
-    margin-right: 17px;
+    margin-right: 10px;
 
     list-style: none;
 }
@@ -665,7 +670,7 @@ h2.crew-member__name
     width: 20px;
     height: 20px;
     background-color: #d2def3;
-    margin-right: 5px;
+    margin-right: 7px;
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
