@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="arrow" horiz-adv-x="1000" >
+<font-face font-family="arrow" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="arrow-back" unicode="&#xe800;" d="M318 600l-217-250 217-250 218-250-268 250-268 250 268 250 268 250z" horiz-adv-x="536" />
+
+<glyph glyph-name="arrow-forward" unicode="&#xe801;" d="M218 100l218 250-218 250-218 250 268-250 268-250-268-250-268-250z" horiz-adv-x="536" />
+</font>
+</defs>
+</svg>

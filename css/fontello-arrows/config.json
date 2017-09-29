@@ -1,0 +1,38 @@
+{
+  "name": "arrow",
+  "css_prefix_text": "iconn-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "f607a1c01ce20314a15319bce3ba1548",
+      "css": "arrow-back",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M318.4 250L100.5 500 318.4 750 536.2 1000 268.1 750 0 500 268.1 250 536.2 0Z",
+        "width": 536
+      },
+      "search": [
+        "arrow-back"
+      ]
+    },
+    {
+      "uid": "73beb5590eb5797f0adf378ac4f9d995",
+      "css": "arrow-forward",
+      "code": 59393,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M217.8 750L435.7 500 217.8 250 0 0 268.1 250 536.2 500 268.1 750 0 1000Z",
+        "width": 536
+      },
+      "search": [
+        "arrow-forward"
+      ]
+    }
+  ]
+}
