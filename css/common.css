@@ -66,6 +66,11 @@ p
     background: transparent;
 }
 
+hr {
+    opacity: .3;
+    margin: 0;
+}
+
 html,
 body
 {
@@ -394,8 +399,9 @@ ul {
     display: inline-block;
 
     box-sizing: border-box;
-    width: 900px;
+    max-width: 900px;
     margin-left: 19px;
+    margin-right: 20px;
     padding-bottom: 70px;
     margin-top: 40px;
 }
@@ -699,23 +705,47 @@ h2.crew-member__name
 
 .feedback-list {
     list-style: none;
-}
-
-
-.feedback-item-content {
-    margin-top: 29px;
-    margin-bottom: 26px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    flex-direction: column;
 }
 
-.feedback-item-avatar img {
+
+.feedback-item-content {
+    margin-top: 29px;
+    margin-bottom: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    max-width: 900px;
+    min-height: 160px;
+    justify-content: flex-start;
+}
+
+.feedback-item:after {
+    content: '';
+    width: 880px;
+    height: 1px;
+    opacity: .1;
+    background-color: #000;
+    display: inline-block;
+  
+}
+
+.feedback-item:last-child:after {
+    content: "";
+}
+
+.feedback-item-avatar {
     width: 160px;
     height: 160px;
     overflow: hidden;
+    border-radius: 50%;
 
 }
 
@@ -724,7 +754,8 @@ h2.crew-member__name
 }
 
 .feedback-item-text {
-    margin: -5px 21px 0 20px;
+    margin: -5px 0px 0 20px;
+    max-width: 697px;
 }
 
 .feedback-item-text__date {
@@ -745,7 +776,7 @@ h2.crew-member__name
 }
 
 .pagination-block {
-    margin-top: 9px;
+
     text-align: center;
     margin-bottom: 70px;
     
@@ -791,16 +822,15 @@ h2.crew-member__name
     top: 50%;
 }*/
 
-.page:hover div {
-    background-color: #1c5bc3;
-    color: #fff;
-    border-radius: 2px;
+.page:hover a {
+    color: #1c5bc3;
 }
 
-/*.page-active {
+.page-active {
     background-color: #1c5bc3;
     color: #fff;
-}*/
+    border-radius: 4px;
+}
 
 .icon-arrow-back-inactive {
     opacity: .3;
@@ -811,6 +841,7 @@ h2.crew-member__name
     width: 700px;
     height: 425px;
     background-color: #f5f5f5;
+    margin:0 auto 70px;
     padding: 50px 70px 25px 69px;
     
 }
@@ -826,6 +857,8 @@ h2.crew-member__name
 .feedback-form__tag {
     font-size: 14px;
     width: 560px;
+    box-sizing: border-box;
+
 
 }
 
@@ -842,7 +875,18 @@ input {
 }
 
 input[type="radio"] {
-    display:none;
+    position: absolute; 
+    overflow: hidden;   
+    clip: rect(0 0 0 0);    
+    height: 1px;    
+    width: 1px; 
+    margin: -1px;   
+    padding: 0; 
+    border: 0;
+}
+
+.feedback-form__radius-container:focus {
+    border: 1px solid #1c5bc3;
 }
 
 input[type="radio"] + label span {
@@ -892,12 +936,23 @@ input[type="radio"]:checked + label span {
     
 }
 
+
+.feedback-form__inputs input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #1c5bc3;
+    
+}
+
 .feedback-form__radio {
     display: inline;
 }
 
 .feedback-form__radio-elem {
     width: 100%;
+}
+
+.feedback-form__radio-elem:focus {
+    border: 1px solid #1c5bc3;
 }
 
 .feedback-form__radio-name {
@@ -916,6 +971,12 @@ input[type="radio"]:checked + label span {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.2em;
+}
+
+.feedback-form__submit:hover {
+    color: #1c5bc3;
+    background-color: #fff;
+    border: 0;
 }
 
 .feedback-form__radius-title {
