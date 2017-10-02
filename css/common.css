@@ -748,7 +748,7 @@ h2.crew-member__name
 }
 
 .feedback-item:last-child:after {
-    content: "";
+    content: none;
 }
 
 .feedback-item-avatar {
@@ -878,7 +878,8 @@ h2.crew-member__name
 }
 input {
     width: 260px;
-    border: 0;
+    border: 1px #000 solid;
+    border-color:transparent;
     line-height: 42px;
     font-size: 14px;
     font-family: 'robotolight';
@@ -918,6 +919,8 @@ input[type="radio"]:checked + label span {
     width: 560px;
     margin-top: 18px;
     margin-bottom: 10px;
+    border: 1px #000 solid;
+    border-color:transparent;
 }
 .feedback-form__text-input {
     width: 560px;
