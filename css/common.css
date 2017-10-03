@@ -125,6 +125,10 @@ ul {
     line-height: 18px;
 }
 
+.breadcrumbs__item a {
+    color: #1c5bc3;
+}
+
 .crew
 {
     display: -webkit-flex;
@@ -141,16 +145,18 @@ ul {
 
 .crew-list {
     text-align: center;
+    margin-top: 50px;
     
 }
 
 
 .crew-member {
     display: inline-block;
+    box-sizing: border-box;
     position: relative;
     vertical-align: top;
-    width: 258px;
-    margin: 49px 25px 0px 12px;
+    max-width: 260px;
+    margin: 0px 25px 46px 11px;
     text-align: center;
 }
 
@@ -171,7 +177,7 @@ ul {
 }
 
 .crew-member__occ {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .crew-memer__descr {
@@ -288,13 +294,14 @@ ul {
 .header-info-schedule
 {
     text-align: right;
-     position: relative;
+    position: relative;
 }
 
 .header-info-schedule__timetable
 {
+    display: inline-block;
     font-size: 14px;
-    right: 0;
+    /*right: 0;*/
     text-decoration: underline;
     color: #ced7ee;
     
@@ -317,12 +324,12 @@ ul {
 {
     font-size: 14px;
     position: absolute;
-    margin-right: 37px;
+    right: -7px;
     text-align: left;
     z-index: 1;
     display: none;
-    width: 159px;
-    height: 98px;
+    width: 150px;
+    height: 60px;
     padding-top: 33px;
     padding-left: 30px;
     transition: 5s;
@@ -394,16 +401,27 @@ ul {
 }
 
 
+.about-main-block
+{
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 900px;
+    margin-left: 19px;
+    margin-right: -20px;
+    padding-bottom: 71px;
+    margin-top: 42px;
+}
+
 .main-block
 {
     display: inline-block;
 
     box-sizing: border-box;
     max-width: 900px;
-    margin-left: 36px;
+    margin-left: 17px;
     margin-right: -20px;
-    padding-bottom: 65px;
-    margin-top: 40px;
+    padding-bottom: 18px;
+    margin-top: 39px;
 }
 
 .feedback-main-block {
@@ -412,7 +430,7 @@ ul {
     max-width: 900px;
     margin-left: 19px;
     margin-right: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 23px;
     margin-top: 40px;
 }
 
@@ -457,11 +475,16 @@ ul {
     margin: 15px 0;
 }
 
+.main-block-main-text > p:last-child
+{
+    margin: 11px 0;
+}
+
 .main-block-main-text>ul
 {
 
     padding-left: 40px;
-    margin: -5px auto;
+    margin: -6px auto;
 }
 
 .main-block-main-text>ul>li {
@@ -874,7 +897,7 @@ h2.crew-member__name
 
 .feedback-form__input {
     line-height: 44px;
-    padding-left: 9px;
+    padding-left: 7px;
 }
 input {
     width: 260px;
@@ -917,11 +940,19 @@ input[type="radio"]:checked + label span {
 
 .feedback-form__textarea {
     width: 560px;
-    margin-top: 18px;
+    margin-top: 14px;
     margin-bottom: 10px;
     border: 1px #000 solid;
     border-color:transparent;
-}
+    }
+
+/*.feedback-form__text-input {
+    width: 560px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    border: 1px #000 solid;
+    
+}*/
 .feedback-form__text-input {
     width: 560px;
     height: 90px;
@@ -931,6 +962,8 @@ input[type="radio"]:checked + label span {
     box-sizing: border-box;
     font-size: 14px;
     font-family: 'robotolight';
+    border: 1px #000 solid;
+    border-color:transparent;
 }
 
 
