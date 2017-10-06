@@ -234,6 +234,7 @@ ul {
     color: #1c5bc3;
     border: 1px solid #1c5bc3;
     border-radius: 4px;
+    transition: .3s;
 }
 
 .main-intro-bg-logo a
@@ -700,12 +701,12 @@ h2.crew-member__name
     margin-bottom: 7px;
     font-size: 14px;
     font-weight: bold;
-    font-family: 'Roboto';
+    font-family: 'robotobold';
 }
 
 .social-list
 {
-    margin-right: 10px;
+    margin-right: 8px;
 
     list-style: none;
 }
@@ -991,6 +992,7 @@ input[type="radio"]:checked + label span {
 
 .feedback-form__radio {
     display: inline;
+    
 }
 
 .feedback-form__radio-elem {
@@ -1003,6 +1005,7 @@ input[type="radio"]:checked + label span {
 
 .feedback-form__radio-name {
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .feedback-form__submit {
@@ -1017,6 +1020,7 @@ input[type="radio"]:checked + label span {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.2em;
+    transition: .2s;
 }
 
 .feedback-form__submit:hover {
